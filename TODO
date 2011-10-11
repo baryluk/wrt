@@ -1,0 +1,14 @@
+obiekty, materialy, trojkaty w xml (o sie latwo czyta w programie i czyta recznie)
+pozniej sie uzyje jakis format binarny + trzymanie w zip czy cos
+
+16x16 packet traversal, i frustrum culling (gdzie wald opisywal to
+chyba w BVH for raytracing dynamic scenes, Phantom tez tego uzywal)
+
+wyeliminowac klasy i funkcje wirtualne absolutnie!
+
+pobiezny profiling:
+
+AABB.intersect to wiekszosc
+vec3.opDiv zabija (obliczyc gdzies wczesniej inv_dir)
+getMin, getMax tez sporo
+bvh.inersect,recurse duzo do optymalizacji
